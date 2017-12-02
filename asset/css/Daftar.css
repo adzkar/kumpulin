@@ -1,0 +1,199 @@
+p{
+	font-family: roboto;
+}
+
+a{
+	font-family: roboto;
+}
+
+.page{
+	background-color: #E5E5E5;
+}
+
+.menu{
+	background-color: #FFFFFF;
+	padding-bottom: 10px;
+}
+
+
+.logo_header{
+	padding-left: 87px;
+	padding-top: 12px;
+}
+
+.explore_word{
+	padding-top: 28px;
+	text-align: right;
+	font-size: 24px;
+	color:#455265;
+}
+
+.search_field{
+	padding-top: 28px;
+	text-align: left;
+}
+
+.btnGroupLogDaf{
+	padding-top: 31px;
+	padding-right: 107px;
+}
+
+.daftar, .daftar:focus, .daftar:hover{
+	background-color: #2A394F;
+	font-size: 18px;
+	border:none;
+	float:right;
+	box-shadow: none;
+	border: none;
+}
+
+.daftar:active, .daftar.active{
+	box-shadow: none !important;
+	background-color: #ffffff !important;
+	color: #2A394F !important;
+}
+
+.login, .login:focus, .login:hover{
+	background-color: #FFFFFF;
+	color:#445265;
+	font-size: 18px;
+	border: none;
+	float: right;
+	box-shadow: none;
+	border: none;
+}
+
+.login:active, .login.active{
+	box-shadow: none !important;
+	background-color: #2A394F !important;
+	color: #ffffff !important;
+}
+
+/**EndOfHeader**/
+
+.daftar-form{
+	background-color: white;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 21px;
+	padding-right: 21px;
+	padding-top: 21px;
+	padding-bottom: 21px; 
+	margin-top: 60px;
+	margin-bottom: 150px;
+	box-shadow: 0 4px 6px 0 grey;
+}
+
+.logo{
+	width: 170px;
+	height: 65px;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-bottom: 13px;
+}
+
+.text{
+	font-size: 17px;
+	font-weight: 500;
+	margin-bottom: 18px;
+	text-align: center;
+}
+
+.text-center{
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.text2{
+	color:#BDBDBD !important;
+	font-size: 11px;
+	font-weight: 600;
+}
+
+.text2-link{
+	color:#F59B4D;
+	font-size: 11px;
+	font-weight: 600;
+}
+
+.btn-daftar, .btn-daftar:focus, .btn-daftar:hover{
+	font-size: 18px;
+	font-weight: 500;
+	width: 280px;
+	height: 40px;
+	background-color: #F59B4D;
+	width: 100%;
+	text-align: center;
+	box-shadow: 0 4px 2px 0 grey;
+	border:none;
+	margin-bottom: 10px;
+}
+
+.btn-daftar:active ,.btn-daftar.active{
+	box-shadow: none !important;
+	background-color: #F59B4D !important; 
+	border:none !important;
+}
+
+.link{
+	display: block;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 15px;
+	margin-bottom: 40px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+/**Footer**/
+
+.footer_style{
+	background-color: white;
+	margin-top: 130px;
+	padding-bottom: 0px;
+}
+
+.logo_footer{
+	width: 150px;
+	height: 55px;
+	margin-top: 25px;
+	margin-left: 140px;
+}
+
+.text_footer_1{
+	width: 380px;
+	font-size: 14px;
+	color: #2A394F;
+	margin-left: 140px;
+}
+
+.text_footer_2{
+	color: black;
+	font-size: 14px;
+	text-align: center;
+}
+
+.cpbtn_style{
+	margin-left: 125px;
+}
+
+.cp_button, .cp_button:hover, .cp_button:focus{
+	background-color: transparent;
+	box-shadow: none;
+	background-repeat: no-repeat;
+	border: none;
+	outline: none;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.cp_button:active, .cp_button.active{
+	box-shadow: none !important;
+	background-color: transparent !important;
+	border:none !important;
+	outline: none !important;
+}
