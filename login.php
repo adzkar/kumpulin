@@ -1,6 +1,6 @@
 <?php  
 	// cek apakah sudah login atau belum
-	var_dump($_SESSION);
+	// var_dump($_SESSION);
 	if (isset($_SESSION["status_masuk"])) {
 		echo "Anda Sudah Masuk";
 		echo "<a href='logout.php'>Logout</a>";

@@ -2,6 +2,11 @@ p{
 	font-family: roboto;
 }
 
+header{
+	color: #2A394F;
+	font-family: roboto;
+}
+
 .menu{
 	background-color: #FFFFFF;
 	padding-bottom: 10px;
@@ -157,15 +162,14 @@ p.caption_3{
 	padding-bottom: 20px;
 }
 
-.footer_style{
+/*.footer_style{
 	background-color: white;
-	/*margin-top: 25px;*/	
+	margin-top: 25px;	
 	margin-bottom: 25px;
-}
+}*/
 
-#footernya {
+/*#footernya {
 	margin-left: -20px;
-	background-color: red;
 	width: 99vw;
 }
 
@@ -187,7 +191,7 @@ p.caption_3{
 	color: black;
 	font-size: 14px;
 	text-align: center;
-}
+}*/
 
 .cpbtn_style{
 	margin-left: 125px;

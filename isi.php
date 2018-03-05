@@ -18,5 +18,7 @@
 		include 'contoh.php';
 	} else if ($halaman == 'postingan') {
 		include 'postingan.php';
+	} else if ($halaman == 'konfirmasi') {
+		include 'konfirmasi.php';
 	}
 ?>

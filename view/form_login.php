@@ -6,7 +6,7 @@
 <div class="main_content container-fluid">
 
 <div class="login-form rounded col-lg-3">
-	<img class="logo" src="asset/img/Logo.png">
+	<img class="logo" src="asset/img/Logo.png" style="width100">
 	<p class="text">Silakan login untuk mengakses semua fitur Kumpul.in</p>
 	<form action="" method="post">
 		<div class="form-group">

@@ -39,5 +39,7 @@
 		include 'daftarsouvenir.php';
 	} else if ($halaman == 'edit_souvenir') {
 		include 'edit_souvenir.php';
-	}
+	} else if ($halaman == 'konfirmasi') {
+		include 'konfirmasi.php';
+	} 
 ?>

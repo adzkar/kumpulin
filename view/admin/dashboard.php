@@ -30,7 +30,7 @@
     <!--  Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
-    <link href="<?="{$url}asset/css/dashboard/themify-icons.css"?>" rel="stylesheet">
+    <link href="<?="{$url}asset/css/themify-icons.css"?>" rel="stylesheet">
     <script type="text/javascript">  
      tinymce.init({  
        selector: "textarea",  
@@ -42,7 +42,12 @@
        toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"  
      });  
      </script>  
-
+    <style type="text/css">
+        .kebawah ul {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
 </head>
 <body>
 
@@ -98,6 +103,14 @@
                     <a href="<?="{$url}admin/dashboard/?halaman=daftarsouvenir"?>">
                         <i class="ti-view-list-alt"></i>
                         <p>Daftar Souvenir</p>
+                    </a>
+                </li>
+                <li <?php if ($halaman == 'konfirmasi') {
+                    echo "class='active'";
+                } ?>>
+                    <a href="<?="{$url}admin/dashboard/?halaman=konfirmasi"?>">
+                        <i class="ti-view-list-alt"></i>
+                        <p>Konfirmasi Pembayaran</p>
                     </a>
                 </li>
                 <li>

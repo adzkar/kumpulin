@@ -12,7 +12,7 @@
 		$_SESSION["id_pembelian"] = $max + 1;
 	}
 
-	print_r($_SESSION);
+	// print_r($_SESSION);
 
 	if (isset($_SESSION["souvenir"])) {
 		$id_souvenir = $_SESSION['souvenir'];
@@ -46,6 +46,7 @@
 		$bank = $_POST["bank"];
 
 		$b = array(
+				'id_event' => $_SESSION['id_event'],
 				'id_pembelian' => $_SESSION['id_pembelian'],
 				'id_user' => $_SESSION["id_user"],
 				'id_souvenir' => @$_SESSION["souvenir"],
@@ -73,31 +74,70 @@
 
 <!-- mengharuskan user untuk login terlebih dahulu -->
 
-<div class="page">
-	<div class="container">
-		<div class="col-lg-5 col-centered">
+<div class="col-lg-7 col-centered content-box">
+	<div class="container-fluid">
+		<div class="alert alert-warning">
+		  Jika anda telah melakukan pembaran diharapkan untuk melakukan konfirmasi pada link berikut 
+			<a href="<?=$url."?halaman=konfirmasi&id=".$_SESSION['id_pembelian']?>">Klik Disini</a>
+		</div>
+		<div class="row">
+			<div class="col-lg-4">
+				<p class="text1">Nominal</p>
+				<p class="text2">Administrasi</p>
+			</div>
+			<div class="col-lg-8">
+				<p class="text3"><?=$blog->rupiah($harga_murni)?></p>
+				<p class="text4"><?=$blog->rupiah($administrasi)?></p>
+			</div>
+		</div>
+		<div class="row box-total">
+				<div class="col-lg-4">
+					<p class="text5">Total</p>
+				</div>
+				<div class="col-lg-8">
+					<p class="text6"><?=$blog->rupiah($harga_murni+$administrasi)?></p>
+				</div>
+			</div>
+			<div class="row box-pembayaran">
+				<div class="col-lg-5">
+					<p class="text7">Silahkan transfer ke</p>
+					<img src="asset/img/Mandiri_logo.png">
+				</div>
+				<div class="col-lg-7">
+					<p class="text8">167 000 110 8314</p>
+					<p class="text9">Atas nama: Kumpul.in</p>
+					<p class="text9">Cabang: Bandung</p>
+					<p class="text9">Bank Mandiri</p>
+				</div>
+				<p class="text10 text-justify text-center">
+					Kamu dapat transfer menggunakan channel apapun (ATM, mobile banking, SMS banking atau teller) selama tujuan transfer sesuai dengan bank yang dipilih.
+				</p>
+			</div>
+			
+			
+		<!-- <div class="col-lg-5">
 			<h1 class="page-header">Pembayaran</h1>
-			<p>
-				Nominal
+			<p> -->
+				<!-- Nominal -->
 				<?php  
-					echo $blog->rupiah($harga_murni);
-					echo "<br>";
-					echo $blog->rupiah($administrasi);
+					// echo $blog->rupiah($harga_murni);
+					// echo "<br>";
+					// echo $blog->rupiah($administrasi);
 				?>
-			</p>
+			<!-- </p>
 
-			<p>
-				Total 
+			<p> -->
+				<!-- Total  -->
 				<?php  
-					echo $blog->rupiah($harga_murni+$administrasi);
+					// echo $blog->rupiah($harga_murni+$administrasi);
 				?>
-			</p>
+			<!-- </p>
 
-			<p>
-				Jika anda telah melakukan pembaran diharapkan untuk melakukan konfirmasi pada link berikut 
-				<a href="<?=$url."?halaman=konfirmasi&id=".$_SESSION['id_pembelian']?>">Klik Disini</a>
+			<p> -->
+				
 			</p>
 		</div>
 	</div>
 </div>
+
 

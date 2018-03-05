@@ -15,18 +15,22 @@
     <link href="<?="{$url}asset/css/bootstrap.min.css"?>" rel="stylesheet" />
     <!-- Animation library for notifications   -->
     <link href="<?="{$url}asset/css/animate.min.css"?>" rel="stylesheet"/>
-	<!-- main page css -->
-	<link rel="stylesheet" href="asset/css/MainPage.css">
+    <!-- Pembayaran page -->
+	<link rel="stylesheet" href="asset/css/Pembayaran-page3.css">
 	<!-- login css -->
 	<link rel="stylesheet" href="asset/css/Login.css">
 	<!-- signup css -->
 	<link rel="stylesheet" href="asset/css/Daftar.css">
-	<!-- detail CSS -->
-	<link rel="stylesheet" href="asset/css/Detail.css">
 	<!-- font -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">		
+	<!-- main page css -->
+	<link rel="stylesheet" href="asset/css/MainPage.css">
+	<!-- detail CSS -->
+	<link rel="stylesheet" href="asset/css/Detail.css">
 </head>
 <body>
+	
+	<div class="page">
 	<!--Top Menu-->	
 
   <div class="menu">
@@ -79,7 +83,7 @@
 	
 <!-- </div> -->
 
-	<div class="footer_style countainer-fluid" id="footernya">
+	<div class="footer_style countainer-fluid" id="footernya" style="margin-top: 100px">
 	     <div class="col-lg-3">
 	       <img class="logo_footer" src="asset/img/Logo.png">
 		   <div>
@@ -105,10 +109,11 @@
 			 </div>
 		   </div>
 		</div>
-		<div class="container">
-			<div class="row"></div>
-		</div>
+			<div class="container">
+				<div class="row"></div>
+			</div>
 		<p  class="text_footer_2">© Hak Cipta team Cupcake 2017</p>
 	</div>
+</div>
 </body>
 </html>

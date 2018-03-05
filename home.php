@@ -8,13 +8,13 @@
 
 	<!--Navigation Bar-->
 			
-	<nav class="top_navbar navbar navbar-expand-lg bg-light navbar-light">
+	<nav class="top_navbar navbar navbar-expand-lg bg-light navbar-light" style="background-color: #fff">
 	  <ul class="navbar-nav mx-auto">
 	    <li class="nav-item active">
-		  <a class="navbar_text nav-link">Seni & Hiburan</a>
+		  <a class="navbar_text nav-link"  style="color:#2A394F"><strong>Seni & Hiburan</strong></a>
 		</li>
 		<li class="nav-item">
-		  <a class="navbar_text nav-link">Seminar</a>
+		  <a class="navbar_text nav-link"  style="color:black"><strong>Seminar</strong></a>
 		</li>
 	  </ul>
 	</nav>	
@@ -43,14 +43,14 @@
 
 <div class=" col-lg-3" style="margin-left: 150px">
 	<div class="thumbnail_style thumbnail rounded">
-		<a href="<?="{$url}?halaman=post=id_post={$r['id_event']}"?>">
+		<a href="<?="{$url}?halaman=post&id_post={$r['id_event']}"?>">
 			<img class="thmb_img_style" src="<?="{$url}uploaded_img/{$r['gambar']}"?>">
 		</a>
 		<div class = "caption">
 			<p class="caption_1">
-				<a href="<?="{$url}?halaman=post=id_post={$r['id_event']}"?>">
+				<a href="<?="{$url}?halaman=post&id_post={$r['id_event']}"?>" style="color: #2A394F">
 					<strong>
-						 <h2><?="{$r['judul_event']}"?></h2>
+						 <h2 class="header"><?="{$r['judul_event']}"?></h2>
 					</strong>
 				</a>
 			</p>
@@ -59,12 +59,23 @@
 			<div class="container-fluid">
 				<div class="detail_thmb_style row">
 					<div class="detail_thmb_1 col-lg-6">
-						<p><b>Rp. 75.890.790</b><br>Terkumpul
+						<?php  
+							$b = array('id_event' => $r['id_event']);
+							$baca = $blog->read($pembelian, $b);
+							$total = 0;
+							while ($d = $baca->fetch(PDO::FETCH_LAZY)) {
+								$total = $total + $d['harga_murni'];
+							}
+						?>
+						<p><b><?=$blog->rupiah($total)?></b><br>Terkumpul
 					</div>
-					<div class="detail_thmb_1 col-lg-3"><b>68%</b><br>Tercapai</p>
+					<?php  
+						$persentase = $total / $r['dana'] * 100;
+					?>
+					<div class="detail_thmb_1 col-lg-3"><b><?=$persentase?> %</b><br>Tercapai</p>
 					</div>
 					<div class="col-lg-3">
-						<p><b>5 bln</b><br>Target
+						<p><b><?=$r['target']?> bln</b><br>Target
 					</div>
 				</div>
 			</div><!-- container fluid -->

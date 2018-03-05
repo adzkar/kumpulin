@@ -1,11 +1,13 @@
 <?php  
-	print_r($_SESSION);
+	// print_r($_SESSION);
 ?>
 <div class="page">
 	<div class="container">
 		<div class="col-lg-5 col-centered">
 			<div class="content">
 			<?php  
+				$id_event       = $_POST['id_event'];
+				$_SESSION['id_event'] = $id_event;
 				$souvenir_input = @$_POST["souvenir"];
 				$jumlah_souvenir = @$_POST["jumlah_souvenir"];
 				$tiket_input = @$_POST["tiket"];
